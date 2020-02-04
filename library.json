@@ -1,0 +1,22 @@
+{
+    "name": "Keccak",
+    "version": "0.0.1",
+    "keywords": "crypto, iota, keccak",
+    "description": "IOTA Keccak library",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/oopsmonk/XKCP.git",
+      "branch": "pio_keccakp1600"
+    },
+    "frameworks": "mbed",
+    "platforms": "*",
+    "build": {
+        "srcFilter": [
+            "lib/low/KeccakP-1600/Reference/KeccakP-1600-reference.c",
+            "lib/high/Keccak/KeccakSpongeWidth1600.c",
+            "lib/high/Keccak/FIPS202/KeccakHash.c"
+        ]
+    }
+}
+
