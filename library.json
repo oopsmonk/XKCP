@@ -13,9 +13,9 @@
     "platforms": "*",
     "build": {
         "srcFilter": [
-            "lib/low/KeccakP-1600/Reference/KeccakP-1600-reference.c",
-            "lib/high/Keccak/KeccakSpongeWidth1600.c",
-            "lib/high/Keccak/FIPS202/KeccakHash.c"
+            "+<lib/low/KeccakP-1600/Reference/KeccakP-1600-reference.c>",
+            "+<lib/high/Keccak/KeccakSpongeWidth1600.c>",
+            "+<lib/high/Keccak/FIPS202/KeccakHash.c>"
         ]
     }
 }
