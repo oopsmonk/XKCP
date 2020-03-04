@@ -9,7 +9,7 @@
       "url": "https://github.com/oopsmonk/XKCP.git",
       "branch": "pio_keccakp1600"
     },
-    "frameworks": "mbed",
+    "frameworks": "*",
     "platforms": "*",
     "build": {
         "srcFilter": [
