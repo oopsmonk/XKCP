@@ -1,0 +1,26 @@
+{
+    "name": "Keccak",
+    "version": "0.0.2",
+    "keywords": "crypto, iota, keccak",
+    "description": "IOTA Keccak library with in-place32 opt",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/oopsmonk/XKCP.git",
+      "branch": "pio_keccakp1600_inplace32"
+    },
+    "frameworks": "*",
+    "platforms": "*",
+    "build": {
+        "srcFilter": [
+            "+<lib/low/KeccakP-1600/Inplace32BI/KeccakP-1600-inplace32BI.c>",
+            "+<lib/high/Keccak/KeccakSpongeWidth1600.c>",
+            "+<lib/high/Keccak/FIPS202/KeccakHash.c>"
+        ],
+        "flags":[
+            "-fomit-frame-pointer",
+            "-O2",
+            "-g0"
+        ]
+    }
+}
